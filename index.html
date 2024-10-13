@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماشین حساب HTML</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<table id="calcu">
+    <tr>
+        <td colspan="4">
+            <label for="result"></label>
+            <input type="text" id="result" readonly>
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="1" onclick="addToCalculator('1')"></td>
+        <td><input type="button" value="2" onclick="addToCalculator('2')"></td>
+        <td><input type="button" value="3" onclick="addToCalculator('3')"></td>
+        <td><input type="button" value="/" onclick="addToCalculator('/')"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="4" onclick="addToCalculator('4')"></td>
+        <td><input type="button" value="5" onclick="addToCalculator('5')"></td>
+        <td><input type="button" value="6" onclick="addToCalculator('6')"></td>
+        <td><input type="button" value="*" onclick="addToCalculator('*')"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="7" onclick="addToCalculator('7')"></td>
+        <td><input type="button" value="8" onclick="addToCalculator('8')"></td>
+        <td><input type="button" value="9" onclick="addToCalculator('9')"></td>
+        <td><input type="button" value="-" onclick="addToCalculator('-')"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="0" onclick="addToCalculator('0')"></td>
+        <td><input type="button" value="." onclick="addToCalculator('.')"></td>
+        <td><input type="button" value="=" onclick="calculateResult()"></td>
+        <td><input type="button" value="+" onclick="addToCalculator('+')"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="|x|" onclick="applyAbs()"></td>
+        <td><input type="button" value="√" onclick="applySqrt()"></td>
+        <td><input type="button" value="r" onclick="applyRound()"></td>
+        <td><input type="button" value="C" onclick="clearCalculator()"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="x²" onclick="applyPower()"></td>
+        <td><input type="button" value="%" onclick="applyPercentage()"></td>
+    </tr>
+</table>
+
+<script src="./js/index.js"></script>
+
+</body>
+
+</html>
